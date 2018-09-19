@@ -37,7 +37,6 @@ public class AppContext extends Application {
      */
     private void startSDKIntentService() {
         Intent intent = new Intent(this, InitSDKIntentService.class);
-//        intent.setAction("com.tencent.tv.mytencent.InitSDKIntentService");
         startService(intent);
     }
 
