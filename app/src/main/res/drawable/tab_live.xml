@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/tab_cartoon_checked" android:state_checked="true"></item>-->
+    <!--<item android:drawable="@drawable/tab_cartoon_checked" android:state_pressed="true"></item>-->
+    <!--<item android:drawable="@drawable/tab_cartoon_nomal"></item>-->
+    <item android:drawable="@mipmap/icon_shouye1" android:state_checked="true"></item>
+    <item android:drawable="@mipmap/icon_shouye1" android:state_pressed="true"></item>
+    <item android:drawable="@mipmap/icon_shouye3"></item>
+</selector>

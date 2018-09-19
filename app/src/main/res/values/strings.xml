@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyTencent</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="no_net">网络连接失败，请检查网络设置</string>
+</resources>

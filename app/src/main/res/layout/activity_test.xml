@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+    tools:context="com.yfy.tv.ui.ActivityTest">
+
+    <TextView
+        android:id="@+id/tv_start_service"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        android:background="@color/clip_line"
+        android:text="启动服务"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_stop_service"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_service"
+        android:layout_marginTop="@dimen/dim24"
+        android:background="@color/clip_line"
+        android:text="停止服务"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_bind_service"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        app:layout_constraintTop_toBottomOf="@id/tv_stop_service"
+        android:background="@color/clip_line"
+        android:layout_marginTop="@dimen/dim24"
+        android:text="绑定服务"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_unbind_service"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        app:layout_constraintTop_toBottomOf="@id/tv_bind_service"
+        android:background="@color/clip_line"
+        android:layout_marginTop="@dimen/dim24"
+        android:text="解绑服务"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_aidl_service"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        app:layout_constraintTop_toBottomOf="@id/tv_unbind_service"
+        android:background="@color/clip_line"
+        android:layout_marginTop="@dimen/dim24"
+        android:text="aidl"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_romote_data"
+        android:layout_width="@dimen/dim300"
+        android:layout_height="@dimen/dim100"
+        app:layout_constraintTop_toBottomOf="@id/tv_aidl_service"
+        android:background="@color/clip_line"
+        android:layout_marginTop="@dimen/dim24"
+        android:text="remote"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <com.yfy.tv.widget.ScrollViewEx
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_touch_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </com.yfy.tv.widget.ScrollViewEx>
+</android.support.constraint.ConstraintLayout>
