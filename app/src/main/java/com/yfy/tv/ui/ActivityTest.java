@@ -51,6 +51,7 @@ public class ActivityTest extends BaseActivity<BasePresenter> implements View.On
         Intent intentAIDL = new Intent("com.tencent.tv.service.ServerService");
         intentAIDL.setPackage("com.tencent.tv.service");
         bindService(intentAIDL, connAIDL, Context.BIND_AUTO_CREATE);
+        System.out.println();
 //        RecyclerView
     }
 
